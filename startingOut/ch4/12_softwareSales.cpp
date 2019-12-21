@@ -24,6 +24,7 @@ int main() {
         total *= DISCOUNT_4;
     else if (units <= 0)
         cout << "Invalid number. Must be greater than 0\n";
+        exit(1);
 
     cout << setprecision(2) << fixed;
     cout << "The total cost of the purchase was $" << total << endl;
