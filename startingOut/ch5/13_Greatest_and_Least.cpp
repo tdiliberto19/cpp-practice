@@ -11,13 +11,19 @@
 using namespace std;
 
 int main() {
-    int number = 0,
-        lowest = 0,
-        highest = 0;
+    int number,
+        lowest,
+        highest;
 
     cout << "Please enter a series of numbers, one at a time. When ready to terminate, type -99.\n";
     cin >> number;
+    
+    if (number == -99)
+        exit(0);
 
+    highest = lowest = number;
+
+    cin >> number;
     while (number != -99) {
         if (number < lowest)
             lowest = number;
