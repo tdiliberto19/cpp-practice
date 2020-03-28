@@ -19,7 +19,7 @@ int main() {
     const double TAX_RATE = 0.06,
               QUANTITY_WIDTH = 3,
               ISBN_WIDTH = 13,
-              PRICE_WIDTH = 7;
+              PRICE_WIDTH = 6;
     int quantity;
     double price,
            subtotal,
@@ -54,15 +54,15 @@ int main() {
          << endl
          << "Qty ISBN          Title" << setfill(' ') << setw(title.length() + 10) << "Price   Total\n"
          << setfill('-') << setw(QUANTITY_WIDTH + ISBN_WIDTH + title.length() + PRICE_WIDTH + 12) << "-\n"
-         << setfill(' ') << left                << setw(QUANTITY_WIDTH) << quantity << " "
-                         << left                << setw(ISBN_WIDTH)     << isbn << " "
-                         << left                << setw(title.length()) << title << " "
-                         << left << "$" << left << setw(PRICE_WIDTH)    << price
-                                 << "$"                                 << price * quantity << endl
+         << setfill(' ') << left << setw(QUANTITY_WIDTH) << quantity << " "
+                         << setw(ISBN_WIDTH) << isbn << " "
+                         << setw(title.length()) << title << " "
+                         << "$" << setw(PRICE_WIDTH) << price << " "
+                         << "$" << price * quantity << endl
          << endl << endl
-         << "          Subtotal: $" << subtotal << endl
-         << "          Tax: $" << tax << endl
-         << "          Total: $" << total << endl
+         << "       Subtotal: " << right << setw(title.length() + 3) << "$" << subtotal << endl
+         << "            Tax: " << setw(title.length() + 3) << "$" << tax << endl
+         << "          Total: " << setw(title.length() + 3) << "$" << total << endl
          << endl
          << "Thank you for shopping at Serendipity!\n";
 
