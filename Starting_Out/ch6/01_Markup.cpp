@@ -1,5 +1,6 @@
 /**
-    description
+    Obtains the wholesale cost and markup percentage, then processes the retail price through the
+    function calculateRetail(). The program then displays the retail price.
 
     @author Timothy Diliberto
     @version 1.0 3/28/2020
@@ -11,6 +12,8 @@
 using namespace std;
 
 double calculateRetail(double, double);
+
+// Controls operation of the whole program
 
 int main() {
     double wholesale_cost,
@@ -30,6 +33,14 @@ int main() {
 
     return 0;
 }
+
+/**
+    Receives the wholesale cost and markup percentage of an item, then calculates the retail price
+
+    @param wholesale the wholesale value of the item
+           markup the markup percentage on the item
+    @return the retail price of the item
+*/
 
 double calculateRetail(double wholesale, double markup) {
     double retail = wholesale * (1 + markup / 100.0);
