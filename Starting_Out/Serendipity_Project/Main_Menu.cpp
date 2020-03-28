@@ -3,7 +3,7 @@
     Main Menu Screen Style
 
     @author Timothy Diliberto
-    @version 2.0 3/28/2020
+    @version 3.0 3/28/2020
 */
 
 #include <iostream>
@@ -24,12 +24,19 @@ int main() {
     cin >> choice;
 
     while (choice < 1 || choice > 4) {
-        cout << "Please choose an option on the menu: ";
+        cout << "Please enter a number in the range 1-4: ";
         cin >> choice;
     }
 
-    cout << endl
-         << "You chose " << choice << endl;
+    switch (choice) {
+        case 1: cout << "You chose 1\n";
+                break;
+        case 2: cout << "You chose 2\n";
+                break;
+        case 3: cout << "You chose 3\n";
+                break;
+        case 4: cout << "You chose 4\n";
+    }
 
     return 0;
 }

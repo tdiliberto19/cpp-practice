@@ -3,7 +3,7 @@
     Reports Screen Style
 
     @author Timothy Diliberto
-    @version 2.0 3/28/2020
+    @version 3.0 3/28/2020
 */
 
 #include <iostream>
@@ -31,7 +31,22 @@ int main() {
         cin >> choice;
     }
 
-    cout << "You chose " << choice << endl;
+    switch (choice) {
+        case 1: cout << "You chose 1\n";
+                break;
+        case 2: cout << "You chose 2\n";
+                break;
+        case 3: cout << "You chose 3\n";
+                break;
+        case 4: cout << "You chose 4\n";
+                break;
+        case 5: cout << "You chose 5\n";
+                break;
+        case 6: cout << "You chose 6\n";
+                break;
+        case 7: cout << "You chose 7\n";
+                break;
+    }
 
     return 0;
 }
