@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArrayInputOutput", "ArrayInputOutput\ArrayInputOutput.vcxproj", "{37680282-8F0B-49D3-8C80-6D084D259D58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37680282-8F0B-49D3-8C80-6D084D259D58}.Debug|Win32.ActiveCfg = Debug|Win32
+		{37680282-8F0B-49D3-8C80-6D084D259D58}.Debug|Win32.Build.0 = Debug|Win32
+		{37680282-8F0B-49D3-8C80-6D084D259D58}.Release|Win32.ActiveCfg = Release|Win32
+		{37680282-8F0B-49D3-8C80-6D084D259D58}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

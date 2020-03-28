@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiLineComment", "MultiLineComment\MultiLineComment.vcxproj", "{1BD9B920-19F1-4618-A14A-E81FA013ABBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BD9B920-19F1-4618-A14A-E81FA013ABBA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1BD9B920-19F1-4618-A14A-E81FA013ABBA}.Debug|Win32.Build.0 = Debug|Win32
+		{1BD9B920-19F1-4618-A14A-E81FA013ABBA}.Release|Win32.ActiveCfg = Release|Win32
+		{1BD9B920-19F1-4618-A14A-E81FA013ABBA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
