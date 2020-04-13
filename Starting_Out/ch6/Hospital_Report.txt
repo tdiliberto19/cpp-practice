@@ -1,0 +1,4 @@
+    Hospital Bill    
+---------------------
+ Service Fee: $10
+ Medication: $15
