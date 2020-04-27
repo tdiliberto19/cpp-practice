@@ -3,7 +3,7 @@
     lowest rainfall.
 
     @author Timothy Diliberto
-    @version 1.0 4/27/2020
+    @version 2.0 4/27/2020
 */
 
 #include <iostream>
@@ -37,6 +37,11 @@ int main() {
     for (int index = 0; index < MONTHS; index++) {
         cout << "    " << months[index] << ": ";
         cin >> rainfall[index];
+
+        while (rainfall[index] < 0) {
+            cout << "Please enter a positive value for rainfall: ";
+            cin >> rainfall[index];
+        }
     }
 
     for (string month : months)
