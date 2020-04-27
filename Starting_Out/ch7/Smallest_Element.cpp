@@ -8,6 +8,8 @@
     @return smallest Element with smallest value
 */
 
+#include "Arrays.h"
+
 int smallestElement(int array[], int size) {
     int smallest = array[0];
 

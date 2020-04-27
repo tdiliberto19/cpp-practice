@@ -2,22 +2,19 @@
     Obtains 10 values for an array, then determines the largest and smallest of the values
 
     @author Timothy Diliberto
-    @version 1.1 4/26/2020
+    @version 2.0 4/27/2020
 */
 
 #include <iostream>
+#include "Arrays.h"
 
 using namespace std;
 
 // Controls the flow of the program
 
-int largestElement(int [], int);
-int smallestElement(int [], int);
-
 int main() {
     const int NUM_ELEMS = 10;
-    int index = 1,
-        largest,
+    int largest,
         smallest,
         num_array[NUM_ELEMS];
 

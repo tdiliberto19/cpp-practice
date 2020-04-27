@@ -8,6 +8,8 @@
     @return largest Element with largest value
 */
 
+#include "Arrays.h"
+
 int largestElement(int array[], int size) {
     int largest = array[0];
 
