@@ -7,6 +7,7 @@
 */
 
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include "Arrays.h"
 
@@ -21,7 +22,7 @@ int main() {
         least_popular_index,
         jars_sold[NUM_TYPES];
     double total_sales,
-           total_sales_type[NUM_TYPES];
+           type_sales[NUM_TYPES];
     string salsa_types[NUM_TYPES] = {"Mild", "Medium", "Sweet", "Hot", "Zesty"};
 
     cout << "Enter the number of salsa jars per type sold:\n";
@@ -37,13 +38,16 @@ int main() {
     }
 
     for (int index = 0; index < NUM_TYPES; index++)
-        total_sales_type[index] = jars_sold[index] * SALSA_PRICES[index];
+        type_sales[index] = jars_sold[index] * SALSA_PRICES[index];
 
-    total_sales = sumElements(total_sales_type, NUM_TYPES);
+    total_sales = sumElements(type_sales, NUM_TYPES);
     most_popular_index = largestIndex(jars_sold, NUM_TYPES);
     least_popular_index = smallestIndex(jars_sold, NUM_TYPES);
     
-    cout << "Total: " << total_sales << endl
+    cout << setprecision(2) << fixed;
+    for (int index = 0; index < NUM_TYPES; index++)
+        cout << salsa_types[index] << ": $" << type_sales[index] << endl;
+    cout << "Total Sales: " << total_sales << endl
          << "Most Popular: " << salsa_types[most_popular_index] << endl
          << "Least Popular: " << salsa_types[least_popular_index] << endl;
 
