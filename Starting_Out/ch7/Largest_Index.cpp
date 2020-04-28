@@ -10,9 +10,23 @@
 
 #include "Arrays.h"
 
+int largestIndex(int array[], int size) {
+    int largest_value = array[0],
+        largest_index;
+
+    for (int index = 1; index < size; index++) {
+        if (array[index] > largest_value) {
+            largest_value = array[index];
+            largest_index = index;
+        }
+    }
+
+    return largest_index;
+}
+
 int largestIndex(double array[], int size) {
-    double largest_value = array[0],
-         largest_index;
+    double largest_value = array[0];
+    int largest_index;
 
     for (int index = 1; index < size; index++) {
         if (array[index] > largest_value) {

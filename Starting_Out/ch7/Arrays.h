@@ -14,8 +14,10 @@ using namespace std;
 
 int largestElement(int [], int); // Largest_Element.cpp
 int smallestElement(int [], int); // Smallest_Element.cpp
-int largestIndex(double [], int); // Largest_Index.cpp
-int smallestIndex(double [], int); // Smallest_Index.cpp
+int largestIndex(int [], int); // Largest_Index.cpp
+int largestIndex(double [], int);
+int smallestIndex(int [], int); // Smallest_Index.cpp
+int smallestIndex(double [], int);
 double sumElements(double [], int); // Sum_Elements.cpp
 double averageElements(double [], int); // Average_Elements.cpp
 

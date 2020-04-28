@@ -10,9 +10,23 @@
 
 #include "Arrays.h"
 
+int smallestIndex(int array[], int size) {
+    int smallest_value = array[0],
+        smallest_index = 0;
+
+    for (int index = 1; index < size; index++) {
+        if (array[index] < smallest_value) {
+            smallest_value = array[index];
+            smallest_index = index;
+        }
+    }
+
+    return smallest_index;
+}
+
 int smallestIndex(double array[], int size) {
-    double smallest_value = array[0],
-         smallest_index = 0;
+    double smallest_value = array[0];
+    int smallest_index = 0;
 
     for (int index = 1; index < size; index++) {
         if (array[index] < smallest_value) {
