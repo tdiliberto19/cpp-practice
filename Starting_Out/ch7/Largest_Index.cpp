@@ -10,6 +10,8 @@
 
 #include "Arrays.h"
 
+// For an integer array
+
 int largestIndex(int array[], int size) {
     int largest_value = array[0],
         largest_index;
@@ -23,6 +25,8 @@ int largestIndex(int array[], int size) {
 
     return largest_index;
 }
+
+// For a double array
 
 int largestIndex(double array[], int size) {
     double largest_value = array[0];

@@ -10,6 +10,8 @@
 
 #include "Arrays.h"
 
+// For double array
+
 double averageElements(double array[], int size) {
     double total = 0,
            average;
@@ -18,6 +20,21 @@ double averageElements(double array[], int size) {
         total += array[index];
 
     average = total / size;
+
+    return average;
+}
+
+// For double 2D array
+
+double averageElements(double array[][], int rows, int cols) {
+    double total = 0.0,
+           average;
+
+    for (int row_index = 0; row_index < rows; row_index++) {
+        for (int col_index = 0; col_index < cols; col_index++)
+            total += array[row_index][col_index];
+
+    average = total / (rows * cols);
 
     return average;
 }

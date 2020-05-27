@@ -10,13 +10,30 @@
 
 #include "Arrays.h"
 
+const int WIDTH = 100;
+
+// For integer array
+
 int largestElement(int array[], int size) {
     int largest = array[0];
 
     for (int index = 1; index < size; index++) {
         if (array[index] > largest)
             largest = array[index];
-        index++;
+    }
+
+    return largest;
+}
+
+// For double 2D array
+
+double largestElement(double array[][WIDTH], int rows, int cols) {
+    double largest = array[0][0];
+
+    for (int row_index = 0; row_index < rows; row_index++) {
+        for(int col_index = 0; col_index < cols; col_index++) {
+            if (array[row_index][col_index] > largest)
+                largest = array[row_index][col_index];
     }
 
     return largest;
